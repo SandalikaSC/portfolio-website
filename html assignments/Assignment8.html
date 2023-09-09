@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>car</title>
+    <link href="../normalize.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        overflow: hidden;
+    }
+    body>img:nth-child(1){
+        width: 100%;
+        height: 100vh;
+    }
+    body>img:nth-child(2) {
+        position: absolute;
+        width:100vw;
+        top: 86vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    body>div:nth-child(3){
+        position: absolute;
+        width:100vw;
+        top: 60vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-position: 0 0;
+        background: url("../assets/city.png");
+        background-repeat: repeat-x;
+        animation: cityAni 2s linear infinite;
+
+    }
+    @keyframes cityAni {
+        from{
+            background-position: 100% 0;
+        }
+        to{
+            background-position:0 0;
+        }
+
+    }
+    body>img:nth-child(4){
+        position: absolute;
+        top: 78vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 20vw;
+    }
+    body>img:nth-child(5) {
+        position: absolute;
+        width: 3vw;
+        top: 86vh;
+        right: 13vw;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        animation: wheelAni 2s infinite;
+    }
+    body>img:nth-child(6) {
+        position: absolute;
+        width: 3vw;
+        top: 86vh;
+        right: -11.5vw;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        animation: wheelAni 2s infinite;
+    }
+    @keyframes wheelAni {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+
+    }
+
+
+</style>
+<body>
+<img src="../assets/sky.jpg">
+<img src="../assets/road.jpg">
+<div></div>
+<img src="../assets/car.png">
+<img src="../assets/wheel.png">
+<img src="../assets/wheel.png">
+
+
+
+</body>
+</html>

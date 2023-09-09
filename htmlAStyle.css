@@ -1,0 +1,124 @@
+body>main{
+
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(to top,white,#aecfe6);*/
+
+
+}
+h2{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    font-family: "Candara";
+}
+body>main>div:nth-child(1){
+    background: #e294bc;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    animation: assignmentAni 2s ;
+}
+body>main>div>h1{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    font-family: "Candara";
+    margin-top: 15px;
+    left: 10px;
+}
+
+body>main>div:nth-child(2){
+    background: #6ca0d2;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 100px;
+    animation: assignmentAni 3s ;
+}
+body>main>div>h2{
+
+    margin-top: 15px;
+    left: 10px;
+}
+@keyframes assignmentAni {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 0;
+    }
+}
+body>main>section {
+
+    width: 80vw;
+    height: 70%;
+    position: absolute;
+    top:0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    animation: sectionAni 3s ;
+}
+body>main>section>a>div{
+    border: #6ca0d2 solid 1px;
+    opacity: 50%;
+    width: 15vw;
+    height: 7vw;
+    margin: 15px;
+    background: #6dc1e6;
+    position: relative;
+
+}
+body>main>section>a>div>h2{
+    left: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    font-size: 50px;
+    /*top: 0;*/
+    /*bottom: 0;*/
+    margin: auto;
+}
+
+body>main>section>a>div:hover{
+    border: #e294bc solid 5px;
+    opacity: 100%;
+}
+
+
+@keyframes sectionAni {
+    from{
+        top:-50px
+
+    }
+    to{
+        top:0px
+    }
+
+
+}
+@media all and (max-width: 1024px) {
+    body>main>section {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+ @media all  and (min-width: 768px) and (max-width: 1024px){
+
+     body>main {
+         width: 127%;
+     }
+
+     body>main>img:nth-child(4) {
+         right: -254px;
+     }
+     body>main>section {
+         left: 279px;
+
+     }
+ }

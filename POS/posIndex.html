@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sadu POS System</title>
+    <link href="../normalize.css" rel="stylesheet">
+    <link rel="shortcut icon" href="sourses/favicon.png" type="image/x-icon">
+    <link href="sourses/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="sourses/POSStyle.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-content=1">
+
+</head>
+
+<body  class="nav-fixed body"  >
+<!-- Nav Bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg ">
+    <img src="sourses/POSicon.png" width="80" height="80" class="d-inline-block align-top" alt="" loading="lazy">
+    <span class="navbar-brand mb-0 h1 " id="nav-title">SADU POS System</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-5 " id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active  ">
+                <a class="nav-link text-primary border-bottom   border-primary font-weight-bold " href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Customer.html">Customers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Item.html">Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html" >Orders</a>
+            </li>
+        </ul>
+
+    </div>
+    <div ><img src="https://img.icons8.com/ios-filled/50/000000/logout-rounded.png" /> <a class="m-4" href="#" >Logout</a></div>
+
+</nav>
+
+<main class="container shadow-lg bg-light">
+
+    <div class="jumbotron jumbotron-fluid co dashboard">
+        <div class="container row m-3">
+            <h1 class="display-4 font-weight-lighter text-light col-4">Dashboard</h1>
+            <div class="col-5"></div>
+            <div class="col-3 opacity float-right ">
+                <img src="https://img.icons8.com/ios-filled/100/000000/bullish.png"/>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row ">
+
+        <!-- customer card -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Customers</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">20</div>
+                        </div>
+                        <div class="col-auto opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="26" height="26"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"  font-size="none"   style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="" fill="none"></path><path d="" fill="none"></path><g fill="#000000"><path d="M171.98656,96.11844c-0.72563,-12.24156 -8.94938,-16.13844 -14.95594,-18.97375c-3.13094,-1.49156 -5.84531,-2.76812 -6.82625,-4.75687c-0.14781,-1.935 -0.13438,-3.49375 -0.12094,-5.2675v-0.26875c1.72,-2.00219 3.17125,-5.2675 3.85656,-8.22375c1.51844,-1.04813 3.10406,-3.1175 3.61469,-7.26969c0.24188,-2.10969 -0.24187,-3.81625 -1.02125,-5.09281c1.1825,-4.31344 3.05031,-13.70625 -0.88687,-20.03531c-1.72,-2.78156 -4.36719,-4.63594 -7.71313,-5.42875c-2.13656,-2.33812 -5.805,-3.60125 -10.56187,-3.60125h-0.01344c-7.37719,0.13438 -12.81938,2.44563 -16.17875,6.86656c-3.81625,5.03906 -4.63594,12.45656 -2.44563,22.09125c-0.81969,1.29 -1.34375,3.05031 -1.08844,5.21375c0.51062,4.16562 2.10969,6.235 3.62812,7.26969c0.71219,2.92938 2.20375,6.20813 3.95063,8.22375v0.26875c0.01344,1.76031 0.02687,3.31906 -0.12094,5.24063c-0.47031,0.86 -1.43781,1.62594 -2.80844,2.365c-3.225,-8.76125 -10.75,-12.22813 -16.43406,-14.84844c-3.37281,-1.54531 -6.30219,-2.9025 -7.25625,-4.71656c-0.14781,-1.92156 -0.13438,-3.46688 -0.12094,-5.24063l0.01344,-0.28219c1.70656,-2.00219 3.17125,-5.25406 3.85656,-8.22375c1.505,-1.03469 3.10406,-3.1175 3.60125,-7.26969c0.25531,-2.09625 -0.22844,-3.81625 -1.00781,-5.09281c1.16906,-4.31344 3.03687,-13.70625 -0.88688,-20.02188c-1.73344,-2.78156 -4.38062,-4.64937 -7.71312,-5.44219c-1.69313,-1.84094 -4.79719,-3.5475 -10.57531,-3.5475c-7.39063,0.14781 -12.84625,2.44563 -16.19219,6.86656c-3.81625,5.02562 -4.6225,12.42969 -2.43219,22.0375c-0.81969,1.29 -1.34375,3.05031 -1.08844,5.21375c0.49719,4.16562 2.09625,6.235 3.62813,7.26969c0.69875,2.92938 2.20375,6.20813 3.93719,8.22375v0.28219c0.01344,1.77375 0.02687,3.31906 -0.12094,5.22719c-0.95406,1.81406 -3.89688,3.17125 -7.28313,4.71656c-5.71094,2.62031 -13.26281,6.08719 -16.50125,14.84844c-1.37062,-0.73906 -2.35156,-1.505 -2.80844,-2.365c-0.14781,-1.935 -0.13438,-3.49375 -0.12094,-5.28094v-0.22844c1.73344,-2.01562 3.23844,-5.29437 3.93719,-8.22375c1.51844,-1.04812 3.1175,-3.1175 3.62812,-7.28312c0.25531,-2.16344 -0.26875,-3.92375 -1.08844,-5.21375c2.19031,-9.62125 1.37063,-17.05219 -2.44562,-22.07781c-3.35938,-4.42094 -8.80156,-6.73219 -16.24594,-6.86656c-4.71656,0 -8.37156,1.26313 -10.50812,3.60125c-3.34594,0.79281 -5.99313,2.66063 -7.72656,5.44219c-3.92375,6.31563 -2.05594,15.70844 -0.87344,20.02188c-0.77938,1.27656 -1.26313,2.99656 -1.02125,5.10625c0.51062,4.15219 2.09625,6.22156 3.61469,7.26969c0.68531,2.95625 2.13656,6.20813 3.85656,8.21031v0.28219c0.01344,1.77375 0.02687,3.3325 -0.12094,5.2675c-0.98094,1.97531 -3.70875,3.26531 -6.82625,4.74344c-6.00656,2.83531 -14.23031,6.73219 -14.96938,19.17531v37.84c0,0.22844 0.02687,0.45688 0.06719,0.68531c0.20156,1.00781 5.25406,23.44844 39.57344,34.70906c0,0 0.56437,0.49719 5.01219,1.02125c-0.01344,-1.51844 -0.01344,-4.04469 0.12094,-6.54406c1.29,-12.56406 11.40844,-16.6625 18.85281,-19.68594c4.05812,-1.63938 7.88781,-3.19813 9.03,-5.42875c0.17469,-2.12313 0.14781,-3.84313 0.13437,-5.79156v-0.38969c-1.90812,-2.16344 -3.57437,-5.805 -4.32687,-9.03c-1.6125,-1.06156 -3.35938,-3.25188 -3.89688,-7.76688c-0.28219,-2.32469 0.30906,-4.20594 1.19594,-5.56312c-2.40531,-10.44094 -1.54531,-18.47656 2.58,-23.90531c3.58781,-4.73 9.43312,-7.21594 17.36125,-7.35031c5.14656,0 9.07031,1.35719 11.32781,3.88344c3.60125,0.83313 6.46344,2.82188 8.30438,5.79156c4.24625,6.83969 2.16344,17.0925 0.88687,21.68813c0.86,1.35719 1.41094,3.19812 1.14219,5.46906c-0.55094,4.50156 -2.28438,6.69188 -3.91031,7.75344c-0.73906,3.225 -2.35156,6.85312 -4.21938,9.00312l-0.01344,0.41656c-0.01344,1.94844 -0.02687,3.655 0.13438,5.79156c1.15562,2.24406 4.97187,3.80281 9.00312,5.42875c7.45781,3.03687 17.60313,7.16219 18.8125,19.68594c0.14781,1.8275 0.1075,5.29437 0.08063,6.79937c3.23844,-0.36281 3.44,-0.68531 3.44,-0.68531c35.89156,-11.0725 41.02469,-34.25219 41.23969,-35.30031c0.04031,-0.22844 0.06719,-0.45688 0.06719,-0.68531z"></path></g></g></g></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- item card -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Items</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">50</div>
+                        </div>
+                        <div class="col-auto opacity">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/lift-cart-here.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- order card-->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Orders Today</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">100</div>
+                        </div>
+                        <div class="col-auto opacity">
+                            <img src="https://img.icons8.com/ios-filled/25/000000/order-history.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- settings card-->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-danger shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">System</div>
+                            <button type="button" class="btn btn-outline-danger">Settings</button>
+                        </div>
+                        <div class="col-auto opacity">
+                            <img src="https://img.icons8.com/metro/52/000000/settings.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="sourses/bussiness1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="sourses/bussines2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="sourses/bussiness3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+</main>
+
+
+
+
+<script type="application/javascript" src="sourses/js/jquery-3.5.1.min.js"></script>
+<script type="application/javascript" src="sourses/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Layout With Positions</title>
+    <link href="../normalize.css" rel="stylesheet">
+    <style>
+        body > section {
+            height: 50vh;
+            width: 50vw;
+            position: absolute;
+        }
+
+        body > section:nth-child(1) {
+            left: 0;
+            top: 0;
+            background: red;
+        }
+
+        body > section:nth-child(2) {
+            right: 0;
+            top: 0;
+            background: green;
+        }
+
+        body > section:nth-child(3) {
+            right: 0;
+            bottom: 0;
+            background: deeppink;
+        }
+
+        body > section:nth-child(4) {
+            left: 0;
+            bottom: 0;
+            background: orange;
+        }
+
+        section > div {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section > div > div {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: red;
+        }
+
+        body > div {
+            width: 150px;
+            height: 150px;
+            background: white;
+            position: absolute;
+        }
+
+        body > div:nth-child(5) {
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+        body > div:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        body > div:nth-child(7) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > div:nth-child(8) {
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+        body > div:nth-child(9) {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 220px;
+            height: 220px;
+            margin: auto;
+        }
+
+        body > div > div {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background: red;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+
+        body > div:nth-child(10) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 72px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+        body > div:nth-child(11) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 72px;
+            margin: auto;
+            border-top-right-radius: 100px;
+            border-top-left-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<div>
+    <div></div>
+</div>
+
+<div></div>
+<div></div>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sticky ex</title>
+    <link rel="stylesheet" href="../normalize.css">
+        <style>
+            body>main{
+            height:100vh;
+
+            position:relative;
+
+
+            }
+            body>main>h1{
+            width:max-content;
+            height:max-content;
+             position:absolute;
+             top:0;
+             left:0;
+             right:0;
+             bottom:0;
+             margin:auto;
+                font-size:72px;
+                color:black;
+
+             }
+             h2{
+              margin:0;
+             position:sticky;
+             top:0;
+             background:black;
+                color:white;
+                font-size:40px;
+             }
+            body>main:nth-child(1){
+              background:yellow;
+
+            }
+            body>main:nth-child(2){
+              background:pink;
+
+            }
+            body>main:nth-child(3){
+              background:orange;
+
+            }
+            body>main:nth-child(4){
+              background:blue;
+
+            }
+
+        </style>
+</head>
+<body>
+<main><h2>card1</h2><h1>Hello</h1></main>
+<main><h2>card2</h2><h1>How</h1></main>
+<main><h2>card3</h2><h1>Are</h1></main>
+<main><h2>card4</h2><h1>You?</h1></main>
+</body>
+</html>

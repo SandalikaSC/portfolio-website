@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transitions Navigation</title>
+    <link href="../normalize.css" rel="stylesheet">
+
+    <style>
+        nav {
+            position: relative;
+            top: 50px;
+            right: 230px;
+            height: 600px;
+            width: 300px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        nav > div {
+            height: 80px;
+            width: 290px;
+
+            background-color: #ff4452;
+            box-shadow: 1px 4px 7px 2px #424c6b;
+            transition: all 2s;
+        }
+
+        nav > div:hover {
+            margin-left: 230px;
+            transition: all 2s;
+        }
+
+        div>h1{
+            color: white;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        div{
+            position: relative;
+        }
+
+        div>i{
+            position: absolute;
+            right: 0;
+            color: white;
+            font-size: 37px;
+            top: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div><h1>Menu One</h1>  </div>
+    <div><h1>Menu Two</h1> </div>
+    <div><h1>Menu Three</h1> </div>
+    <div><h1>Menu Four</h1></div>
+    <div><h1>Menu Five</h1> </div>
+
+</nav>
+</body>
+</html>

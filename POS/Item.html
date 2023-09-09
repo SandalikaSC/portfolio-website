@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+    <title>Sadu POS System</title>
+    <link href="../normalize.css" rel="stylesheet">
+    <link rel="shortcut icon" href="sourses/favicon.png" type="image/x-icon">
+    <link href="sourses/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-content=1">
+</head>
+<body style="background: url(sourses/back.jpg)">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg ">
+    <img src="sourses/POSicon.png" width="80" height="80" class="d-inline-block align-top" alt="" loading="lazy">
+    <span class="navbar-brand mb-0 h1 "  style=" color:#70b4e2;font-size: 2em  ;">SADU POS System</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-5 " id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item  ">
+                <a class="nav-link  " href="posIndex.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="Customer.html">Customers</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-primary border-bottom   border-primary font-weight-bold" href="#">Items</a>
+            </li>
+            <li class="nav-item  ">
+                <a class="nav-link " href="order.html" >Orders</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+</nav>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb h3">
+        <li class="breadcrumb-item"><a href="posIndex.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Items</li>
+    </ol>
+</nav>
+<div class="container bg-light border-primary border rounded-lg">
+
+    <div class="card-header h3 border-primary text-info">Item</div>
+
+    <div class="card-body h5 text-secondary font-weight-bold">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Input Item ID/ Item Here">
+        </div>
+        <div class="form-group ">
+            <button class="btn btn-primary ">Search</button>
+            <div class="btn-group  " role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-danger text-light">Delete</button>
+                <button type="button" class="btn btn-success text-light">Update</button>
+
+            </div>
+
+        </div>
+        <div class="form-group float-right   ">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning text-light"> + New Item </button>
+                <button type="button" class="btn btn-info text-light">View All Items</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5" >
+    <div style="height:350px; overflow-y: scroll">
+        <table class="table table-hover table-bordered ">
+            <thead>
+            <tr style="background: #aecfe6">
+                <th scope="col">Item No.</th>
+                <th scope="col">Item</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Price</th>
+            </tr>
+
+            </thead>
+            <tbody class="bg-secondary">
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="application/javascript" src="sourses/js/jquery-3.5.1.min.js"></script>
+<script type="application/javascript" src="sourses/js/bootstrap.min.js"></script>
+
+</body>
+</html>

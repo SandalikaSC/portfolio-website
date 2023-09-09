@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <style>
+     body>div{
+         border-radius: 10px;
+         position: absolute;
+         width: 300px;
+         height: 100px;
+
+
+
+
+         animation: myani 10s ;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+     }
+        @keyframes myani {
+            0%{
+                background: crimson;
+                margin: 0 0 0 0;
+
+            }
+
+            25%{
+                background: chartreuse;
+                margin: 0 0 0 600px;
+
+
+
+            }
+            50%{
+                background: aquamarine;
+                margin: 400px  0 0 600px;
+
+
+            }
+            75%{
+                background: cornflowerblue;
+                margin: 400px 0 0 0;
+
+            }
+            100%{
+                background: chocolate;
+
+
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+
+</body>
+</html>

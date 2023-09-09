@@ -1,0 +1,27 @@
+#nav-title{
+
+    color:#70b4e2;
+    font-size: 2em  ;
+}
+.body{
+    background: #c4ced5;
+
+}
+.opacity{
+opacity: 20%;
+}
+.border-left-primary {
+     border-left: .25rem solid #4e73df!important;
+ }
+.border-left-success {
+    border-left: .25rem solid #28a745!important;
+}
+.border-left-danger {
+    border-left: .25rem solid #dc3545!important;
+}
+.border-left-warning {
+    border-left: .25rem solid #ffc107!important;
+}
+.dashboard{
+    background: linear-gradient(to left,#1e73b5, white,#1e73b5);
+}
